@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* styleing start form here */
+
+
+/* Don't Change Any style without Premission */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+}
+.btnblog{
+    font-size: 20px;
+    font-weight: 600;
+    width: 100px;
+    height: 50px;
+    border-radius: 12px;
+}
+.navbar{
+    background-color: rgb(228, 255, 255) !important;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.navbar-brand{
+color: rgb(68, 67, 67);
+font-size: 35px;
+font-weight: 700;
+
+}
+.small{
+font-size: 25px;
+}
+.card{
+    margin-top: 80px !important;
+
+    margin: 25px;
+    margin-right: 0px;
+    border: 0px;
+   
+
+}
+
+.card-img-top{
+    height: 200px;
+}
+.aria{
+    margin-top: 80px !important;
+   padding: 0px;
+    text-align: center;
+    align-items: center;
+width: 425px;
+   background: rgb(241, 240, 240);
+    padding-left: 0px !important;
+margin-left: 26px;
+ 
+
+   
+}
+
+.wrapper{
+    margin-left: -70px;
+   
+}
+
+.aria-coll{
+    font-size: 20px;
+    text-decoration: underline;
+    color:rgb(0, 0, 0) ;
+    font-weight: 600;
+}
+.tryangle{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.value{
+    margin-left: 10px;
+    width: 100px !important;
+    height: 40px;
+}
+.input{
+    width: 100px;
+    border: 0px ;
+    border-radius: 5px;
+    padding-left:2px;
+    margin-bottom: 20px;
+    background:rgb(229, 226, 226);
+}
+
+.btnd{
+    color: red;
+    
+}
+.ml-5{
+    margin-left: 78px;
+}
+.ml-4{
+    margin-left: 50px;
+}
+.ml-3{
+    margin-left: 45px;
+}
+.ml-1{
+    margin-left: 55px;
+}
+.tryangle{
+    margin-top: 50px;
+}
+
+
+/* blog.html work don't change any one */
+.domheading{
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: red;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.paragraf{
+    margin-left: 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: green;
+}
+.ans{
+    color: coral;
+    font-weight: 700;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.uls{
+    font-size: 25px;
+    margin-left: 35px;
+}

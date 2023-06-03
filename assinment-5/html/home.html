@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style/style.css">
+  <title>Assinment 5</title>
+  <link rel="icon" type="img/png" href="/images/rhombus.png">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+      <h1 class="navbar-brand" href="#">Interactive <br>
+        <small class="small"> Geometry Genius</small>
+      </h1><br>
+
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+
+
+        <li class="nav-item">
+          <button class="btn btn-primary btnblog" id="blogbtn">Bolg</button>
+        </li>
+
+      </ul>
+    </div>
+    </div>
+
+  </nav>
+
+  <div class="container d-flex">
+    <div class="wrapper">
+      <div class="row text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="/images/triangle.png" class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h5 class="card-title">Triangle</h5>
+            <p class="card-text">Area (A) = 0.5 x b x w</p>
+            <div class="flex text-center">
+              <input type="text" id="triangleW" placeholder="  W            cm" class="input">
+
+              <input type="text" id="trianglei" placeholder="  I              cm" class="input xhj">
+            </div>
+            <a href="#" class="btn btn-primary" id="calculatetry">Calculate</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="/images/rectangle.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rectangle</h5>
+            <p class="card-text">Area (A) = W x I</p>
+            <div class="flex">
+              <input type="text" placeholder=" W            cm" class="input" id="rectangleW">
+              <input type="text" placeholder="  I            cm" id="rectanglei" class="input xhj">
+            </div>
+            <a href="#" class="btn btn-primary" id="calculatetrys">Calculate</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="/images/parallelogram.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Parallelogram</h5>
+            <p class="card-text" >Area (A) = B x H</p>
+            <div class="flex">
+              <input type="text" id="parallogramW" placeholder=" b            cm" class="input">
+              <input type="text" placeholder="  h            cm" class="input xhj" id="peloarai">
+            </div>
+            <a href="#" class="btn btn-primary" id="calcul">Calculate</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row text-center">
+        <div class="card" style="width: 18rem;">
+          <img src="/images/rhombus.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rhombus</h5>
+            <p class="card-text">Area (A) = 0.5 x <math>              <msup>
+              <mn>d</mn>
+              <mn>1</mn>
+            </msup>
+          </math> x <math>              <msup>
+            <mn>d</mn>
+            <mn>2</mn>
+          </msup>
+        </math></p>
+            <div class="flex">
+              <input type="text" id="rohumbosw" placeholder="   d1        cm" class="input">
+              <input type="text" id="rohumbosi" placeholder="   d2        cm" class="input xhj">
+            </div>
+            <a href="#" class="btn btn-primary" id="calcu">Calculate</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="/images/pentagon.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pentagon</h5>
+            <p class="card-text">Area (A) =  0.5 x p x b </p>
+            <div class="flex">
+              <input type="text" id="pentaw" placeholder=" p            cm" class="input">
+              <input type="text" id="pentai" placeholder="  b            cm" class="input xhj">
+            </div>
+            <a href="#" class="btn btn-primary" id="calc">Calculate</a>
+          </div>
+        </div>
+
+        <div class="card text-center" style="width: 18rem;">
+          <img src="/images/ellipse.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Ellipse</h5>
+            <p class="card-text">Area (A) = b x w</p>
+            <div class="flex">
+              <input type="text" placeholder=" W            cm" class="input" id="eleiw">
+              <input type="text" placeholder="  I            cm" id="eleii" class="input xhj">
+            </div>
+            <a href="#" class="btn btn-primary" id="cal">Calculate</a>
+          </div>
+        </div>
+      </div>
+    </div><br><br>
+
+
+    <!-- VASLUE ARIAS FOR ALL VALUE -->
+    <div class="aria">
+      <a class="aria-coll">Area Calculation</a>
+      <div class="tryangle d-flex ">
+        <p class="bv">Tryangle</p>
+        <p class="value bv tryu btnd ml-1" id="displayTry">0cm</p>
+        <button class="btn btn-primary value Tryangle"> More</button>
+      </div>
+
+      <div class="tryangle d-flex ">
+        <p class="bv">Rectangle</p>
+        <p class="value bv recy btnd ml-3" id="displayrect">0cm</p>
+        <button class="btn btn-primary value   Rectangles">More </button>
+      </div>
+
+
+      <div class="tryangle d-flex ">
+        <p class="bv">Parallelogram </p>
+        <p class="value bv bsb btnd" id="displayok">0cm</p>
+        <button class="btn btn-primary  value Ellipsess"> More</button>
+      </div>
+
+
+      <div class="tryangle d-flex ">
+        <p class="bv">Rhombus</p>
+        <p class="value bv btnd ml-4" id="displayoks">0cm</p>
+        <button class="btn btn-primary value pentago"> More</button>
+      </div>
+      <div class="tryangle d-flex ">
+        <p class="bv">Pentagon </p>
+        <p class="value bv ml-4  btnd" id="displas">0cm</p>
+        <button class="btn btn-primary value rom"> More</button>
+      </div>
+
+      <div class="tryangle d-flex ">
+        <p class="bv">Ellipse </p>
+        <p class="value bv ml-5 btnd" id="displasdd">0cm</p>
+        <button class="btn btn-primary value ">More </button>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/75058b3bb0.js" crossorigin="anonymous"></script>
+
+
+
+<!-- js file links for all -->
+
+  <script src="/js/script.js"></script>
+  <script src="/js/blog.js"></script>
+  <script src="/js/rectangle.js"></script>
+  <script src="/js/parallel.js"></script>
+  <script src="/js/rohumbos.js"></script>
+  <script src="/js/pentagon.js"></script>
+  <script src="/js/ellipse.js"></script>
+</body>
+
+</html>
